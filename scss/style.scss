@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import "_null";
+@import "_sass";
+@import "_header";
+
+//<ПОДКЛЮЧАЕМ ШРИФТЫ>=========================================================================================
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+	font-family: 'Uni';
+	src: url('../fonts/uni_sans_heavy.eot');
+	src: local('☺'), url('../fonts/uni_sans_heavy.woff') format('woff'), url('../fonts/uni_sans_heavy.ttf') format('truetype'), url('../fonts/uni_sans_heavy.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+//</ПОДКЛЮЧАЕМ ШРИФТЫ>========================================================================================
+
+/* ОСНОВНЫЕ СТИЛИ */
+//<ОБОЛОЧКА>======================================================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &._loaded {
+
+  }
+}
+//</ОБОЛОЧКА>======================================================================
+
+//<ОСНОВНАЯ СЕТКА>======================================================================
+._container {
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+
+}
+//</ОСНОВНАЯ СЕТКА>======================================================================

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<form action="#" method="POST" enctype="multipart/form-data"></form>
+	<div><input placeholder="логин" type="text" name="username" value="" /></div>
+	<div><input placeholder="пароль" type="password" name="userpass" value="" /></div>
+
+	<!--ВЫБОР МЕЖДУ-->
+	<div>
+		<p><input checked type="radio" name="beer" value="light" />Светлое пиво</p>
+		<p><input type="radio" name="beer" value="dark" />Темное пиво</p>
+	</div>
+	<br />
+	<div>
+		<p><input type="radio" name="beer2" value="light" />Светлое пиво</p>
+		<p><input type="radio" name="beer2" value="dark" />Темное пиво</p>
+	</div>
+	<br />
+
+	<!--ЧЕКБОКС-->
+	<div>
+		<p><input type="checkbox" name="car" value="yes" />Наличие авто</p>
+	</div>
+	<br />
+
+	<!--ВЫБРАТЬ ФАЙЛ-->
+	<div>
+		<p><input type="file" name="photo" value=""></p>
+	</div>
+	<br />
+
+	<!--ОКНО ТЕКСТА-->
+	<div>
+		<textarea name="text"></textarea>
+	</div>
+	<br />
+
+	<!--СПИСОК-->
+	<div>
+		<select name="color">
+			<option value="red">Красный</option>
+			<option value="blue">Синий</option>
+			<option value="yellow">Желтый</option>
+		</select>
+	</div>
+	<br />
+	<div>
+		<select multiple name="color">
+			<option selected value="none">-Не выбрано-</option>
+			<option value="red">Красный</option>
+			<option value="blue">Синий</option>
+			<option value="yellow">Желтый</option>
+		</select>
+	</div>
+	<br />
+
+	<!--BUTTON-->
+	<div>
+		<button type="submit">Отправить</button>
+	</div>
+
+	<div>
+		<button type="reset">Отправить</button>
+	</div>
+
+
+</body>
+
+</html>
